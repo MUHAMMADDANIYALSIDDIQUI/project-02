@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 50vw;
+            border: 2px solid black;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box1">
+        <center>
+            <input type="text" placeholder="height" id="ht">
+            <br>
+            <br>
+            <input type="text" placeholder="width" id="wd">
+            <br>
+            <br>
+            <input type="text" placeholder="Background Color" id="bg">
+
+            <br>
+            <br>
+            <button onclick="apply()">Apply</button>
+        </center>
+    </div>
+
+    <center>
+
+       <!-- <div id="box2">
+        </div> <br>
+    -->
+        <div id="box">
+
+        </div>
+        <div id="fire">
+            
+        </div>
+        <input type="text" name="" id="">
+        <button id="btn">Submit</button>
+        </div>
+    </center>
+    
+    <input type="email" id="user" >
+    <button onclick="clk()">Registered</button>
+
+    <script>
+
+
+       // function apply() {
+       //     let ht = document.getElementById("ht").value;
+       //     let wd = document.getElementById("wd").value;
+       //     let bg = document.getElementById("bg").value;
+//
+       //     document.getElementById("box2").style.height = ht;
+       //     document.getElementById("box2").style.width = wd;
+       //     document.getElementById("box2").style.backgroundColor = bg;
+       // }
+        for(let i=0; i<5; i++){
+            let myhd = document.createElement("h1")
+            myhd.innerText = "hellow World";
+            let box = document.getElementById("box");
+            box.appendChild (myhd);          
+        }
+ //       let mybtn = document.createElement("button");
+ //       mybtn.innerText = "click me";
+ //       document.getElementById("fire").appendChild(mybtn);
+ //       mybtn.addEventListener('mouseover', ()=>{alert("Event Fire")})
+ //       //
+//
+ //       let names=["daniyal", "siddiqui"];
+ //       names.find( //loop for element
+ //           (elements,index=>{
+ //               return userName == elements;
+ //            } )
+ //       )
+ //       if(search){
+ //           console.log("User is alredy exist")
+ //       }
+ //       else{
+ //           names.push(userName);
+ //           console.log(names);
+ //       }
+ //       document.getElementById("btn").addEventListener('click', clk)
+        //
+        let emails = [];
+        function clk(){
+            let userEmail = document.getElementById("user").value;
+
+            mailsearch = emails.find(
+                (elements)=>{
+                    return userEmail == elements;
+                }
+            )
+            if(mailsearch){
+                alert("user already exist");
+
+                console.log(emails);
+            }
+
+            else{
+                emails.push(userEmail);
+                document.getElementById("user").value ="";
+                alert("successful Registered");
+                console.log(emails);
+            }
+        }
+        //document.getElementById("emails").addEventListener('click', clk)
+    </script>
+</body>
+
+</html>
+</body>
+</html>

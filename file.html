@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <input type="text" id="userinput" onblur="alrt()">
+    <h1 id="result"></h1>
+    <input type="text" id="UserInput" onchange="alrt(event)">
+    <h1 id="Result"></h1>
+    <script>
+        function alrt(){
+        console.clear();
+        let input1 = document.getElementById("userinput").value;
+        if (input1.lenght !==11){
+            console.log("Incorrect Number");
+        }
+        else {
+            document.getElementById("result").innerText = input1;
+        }
+    }
+    function alrt(event){
+        console.log(event.target.value);
+    }
+    let multiArry =[
+        ["Daniyal","BB-6456", "BSCS"],
+        ["Faaiz","BB-6464", "BSCS"],
+        ["Hamza","BB-6447", "BSCS"],
+    ]
+    console.log(multiArry[2][1]);
+
+    for(let i=0; i<3; i++){
+        for(let j=0; j<6; j++){
+            document.write(j=" :innerloop </br>")
+        }
+        document.write("<br>")
+    }
+
+    let arrays =[
+        ["Waqas","BB-6467", "BSCS", "Gulshan"],
+        ["Wahid","BB-6457", "BSCS", "Gulshan"],
+        ["Ibrar","BB-6452", "BSCS"],
+    ]
+    for(let i=0; i<arrays.lenght; i++){
+        for(let j=0; j<arrays[i].length; j++){
+            document.write(arrays[i][j]+ "<br>")
+        }
+        document.write("<br>")
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 50vw;
+            border: 2px solid black;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box1">
+        <center>
+            <input type="text" placeholder="height" id="ht">
+            <br>
+            <br>
+            <input type="text" placeholder="width" id="wd">
+            <br>
+            <br>
+            <input type="text" placeholder="Background Color" id="bg">
+
+            <br>
+            <br>
+            <button onclick="apply()">Apply</button>
+        </center>
+    </div>
+
+    <center>
+
+        <div id="box2">
+
+
+
+        </div>
+    </center>
+
+
+
+    <script>
+
+
+        function apply() {
+            let ht = document.getElementById("ht").value;
+            let wd = document.getElementById("wd").value;
+            let bg = document.getElementById("bg").value;
+
+            document.getElementById("box2").style.height = ht;
+            document.getElementById("box2").style.width = wd;
+            document.getElementById("box2").style.backgroundColor = bg;
+
+        }
+
+    </script>
+</body>
+
+</html>
+</body>
+</html>

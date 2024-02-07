@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Script.js"></script>
+    <title>New Work Practice</title>
+    <style>
+        .btn{
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: black;
+            color: red;
+            width: 90px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <button class="btn" onclick="Registered()">Register</button>
+    <button type="button" class="btn" onclick="Login()">Login</button><br><br><br>
+    <input type="email" id="Email" placeholder="Email"><br>
+    <button onclick="Submit()" class="btn">Submit</button>
+</center>
+
+<script>
+    let persons = []
+    function Submit(){
+        let Email = document.getElementById("Email").value;
+        persons.push(Email);
+        document.getElementById("Email").value="";
+        console.log(Email)
+    }
+</script>
+</body>
+</html>
